@@ -1,4 +1,4 @@
-import readchar
+import readchar 
 
 
 nombre = input("¡jugador! ¡ingresa tu nickname!: ")
