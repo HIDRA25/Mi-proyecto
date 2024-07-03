@@ -63,13 +63,13 @@ class JuegoArchivo(Juego):
         with open(path_completo, 'r') as file:
             contenido = file.readlines()
         
-        # Remove any empty lines and strip whitespace
+        
         contenido = [line.strip() for line in contenido if line.strip()]
         
         if len(contenido) < 3:
             raise ValueError("El archivo de mapa no contiene suficiente información.")
 
-        # Read the dimensions and coordinates
+        # leer las coordenadas
         try:
             coordenadas = contenido[0].split()
             inicio = tuple(map(int, coordenadas[0:2]))
